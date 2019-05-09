@@ -7,5 +7,4 @@
 
 ```bash
 docker pull opspresso/argo
-docker pull quay.io/opspresso/argo
 ```
