@@ -15,7 +15,7 @@ GIT_USERNAME="bot"
 GIT_USEREMAIL="bot@nalbam.com"
 
 # GITHUB_TOKEN=
-# PUBLISH_PATH=
+# PUBLISH_PATH=${PUBLISH_PATH:-repo.opspresso.com/${REPONAME}}
 # SLACK_TOKEN=
 
 ################################################################################
