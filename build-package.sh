@@ -85,6 +85,7 @@ _package() {
         printf "${NEW}" > ${SHELL_DIR}/target/dist/${REPONAME}
 
         _replace "s/ENV VERSION .*/ENV VERSION ${NEW}/g" ${SHELL_DIR}/Dockerfile
+        _replace "s/ENV VERSION .*/ENV VERSION ${NEW}/g" ${SHELL_DIR}/README.md
 
         _git_push
     else
