@@ -38,7 +38,7 @@ jobs:
       - run:
           name: Publish
           command: |
-            bash ./target/builder.sh publish ./works
+            bash ./target/builder.sh publish
   release:
     docker:
       - image: circleci/golang
@@ -49,7 +49,7 @@ jobs:
       - run:
           name: Release
           command: |
-            bash ./target/builder.sh release ./works
+            bash ./target/builder.sh release
   slack:
     docker:
       - image: circleci/python
@@ -60,7 +60,7 @@ jobs:
       - run:
           name: Slack
           command: |
-            bash ./target/builder.sh slack ./works
+            bash ./target/builder.sh slack
 
 workflows:
   version: 2
