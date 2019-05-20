@@ -12,5 +12,5 @@ docker pull opspresso/argo
 ## version
 
 ```
-ENV VERSION v2.2.1
+ENV VERSION v2.3.0
 ```
