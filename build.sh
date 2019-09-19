@@ -89,12 +89,9 @@ _package() {
 }
 
 _s3_sync() {
-    FLAT_NOW="$(_flat_version ${NOW})"
-    FLAT_NEW="$(_flat_version ${NEW})"
+    BIGGER=$(echo -e "${NOW}\n${NEW}" | sort -V -r | head -1)
 
-    printf '# %-20s %-20s\n' "${FLAT_NOW}" "${FLAT_NEW}"
-
-    if [[ "${FLAT_NOW}" -ge "${FLAT_NEW}" ]]; then
+    if [ "${BIGGER}" == "${NOW}" ]; then
         return
     fi
 
