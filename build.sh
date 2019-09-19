@@ -92,6 +92,8 @@ _s3_sync() {
     FLAT_NOW="$(_flat_version ${NOW})"
     FLAT_NEW="$(_flat_version ${NEW})"
 
+    printf '# %-20s %-20s\n' "${FLAT_NOW}" "${FLAT_NEW}"
+
     if [[ "${FLAT_NOW}" -ge "${FLAT_NEW}" ]]; then
         return
     fi
