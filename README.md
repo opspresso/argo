@@ -1,7 +1,7 @@
 # argo
 
-[![GitHub release](https://img.shields.io/github/release/opspresso/argo.svg)](https://github.com/opspresso/argo/releases)
-[![CircleCI](https://circleci.com/gh/opspresso/argo.svg?style=svg)](https://circleci.com/gh/opspresso/argo)
+[![GitHub Actions status](https://github.com/opspresso/argo/workflows/Build-Push/badge.svg)](https://github.com/opspresso/argo/actions)
+[![GitHub Releases](https://img.shields.io/github/release/opspresso/argo.svg)](https://github.com/opspresso/argo/releases)
 
 [![DockerHub Badge](http://dockeri.co/image/opspresso/argo)](https://hub.docker.com/r/opspresso/argo/)
 
