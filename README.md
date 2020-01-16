@@ -12,7 +12,7 @@ docker pull opspresso/argo
 ## version
 
 ```
-ENV VERSION apiserverimpl
+ENV VERSION master
 ```
 
 ## latest
